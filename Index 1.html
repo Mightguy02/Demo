@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO SIGN IN</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #2E2F34;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: rgba(50, 50, 50, 0.8);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #3B3C42;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3C7AF9;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .google-btn {
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .google-btn img {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .text-muted {
+            color: #BBBBBB;
+            font-size: 0.9rem;
+        }
+
+        .avatars {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .avatars img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .sign-in-code {
+            margin-top: 20px;
+            background-color: #4D4D4D;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function redirectToSite() {
+            // Get the values of the email and password fields
+            var email = document.querySelector('input[type="email"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+
+            // Check if both fields are filled
+            if (email === "" || password === "") {
+                // Alert the user if the fields are empty
+                alert("Please enter both email and password.");
+            } else {
+                // Redirect to the specified URL if both fields are filled
+                window.location.href = "https://shamewithdevelop.netlify.app/";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>INTRO SIGN IN</h1>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button onclick="redirectToSite()">Sign In</button>
+
+     
+
+        <div class="sign-in-code" twolick="redirectToSite()">
+       
+  
+   
+          </div>
+</body>
+</html>
